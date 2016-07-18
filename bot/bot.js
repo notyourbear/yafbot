@@ -9,7 +9,7 @@ var Bot = new Twit({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
-Bot.tweet = function(text){
+Bot.tweet = (text) => {
   console.log(text)
   // this.post('statuses/update', {status: text}, function(err, data, response){
   //   if (err) {

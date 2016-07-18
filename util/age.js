@@ -1,6 +1,6 @@
 const _ = require('underscore');
 
-module.exports = function(low, high){
+module.exports = (low, high) => {
   var num, pronoun;
 
   if(_.isNumber(low) && _.isNumber(high)){
@@ -19,4 +19,4 @@ module.exports = function(low, high){
     var: num,
     sentence: pronoun + ' ' + num + '-year old'
   };
-};
+}

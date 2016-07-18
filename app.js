@@ -12,7 +12,7 @@ sentence.push(RandomName({gender: gender, first:true}));
 sentence.push(defineAge().sentence);
 sentence.push(job);
 
-var phrase = _.reduce(sentence, function(memo, i){
+var phrase = _.reduce(sentence, (memo, i) => {
   return memo + ' ' + i
 });
 
