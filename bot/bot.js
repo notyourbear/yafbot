@@ -10,13 +10,14 @@ var Bot = new Twit({
 });
 
 Bot.tweet = function(text){
-  this.post('statuses/update', {status: text}, function(err, data, response){
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('success!:', data);
-    }
-  });
+  console.log(text)
+  // this.post('statuses/update', {status: text}, function(err, data, response){
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log('success!:', data);
+  //   }
+  // });
 }
 
 module.exports = Bot;
