@@ -1,6 +1,8 @@
 module.exports = {
   adverb: [
     'when',
-    'after'
+    'after',
+    'as',
+    'while'
   ]
 };

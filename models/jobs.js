@@ -1,6 +1,5 @@
 module.exports = [
   'alchemist',
-  'writer',
   'clock maker',
   'necromancer',
   'pirate',
