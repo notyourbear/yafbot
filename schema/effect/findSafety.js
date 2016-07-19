@@ -6,9 +6,6 @@ module.exports = [
     type: 'person'
   },
   {
-    type: 'articles',
-  },
-  {
     type: 'age'
   },
   {
