@@ -1,17 +1,36 @@
 const _ = require('underscore');
+const capitalize = require('../capitalize');
+
+const checkForPunctuation = (item) => {
+  if (_.contains(['.', ',', ':', ';', '!'], item)) return true;
+  return false;
+}
+
 
 module.exports = (schema) => {
   let sentence = _.map(schema, (i) => {
-    p = '../../models/' + i.type
+    var p = '../../models/' + i.type, value
 
-    if(_.has(i, 'subtype')){
-      return _.sample(require(p)[i.subtype])
+    if(_.has(i, 'subtype') && _.has(i, 'tense')){
+      value = _.sample(require(p)[i.subtype])[i.tense]
+    } else if (_.has(i, 'tense')) {
+      value = _.sample(require(p))[i.tense]
+    } else if (_.has(i, 'subtype')) {
+      value = _.sample(require(p)[i.subtype])
     } else {
-      return _.sample(require(p))
+      value = _.sample(require(p))
     }
+
+    return value;
   });
 
-  return _.reduce(sentence, (memo, i) => {
-    return memo + ' ' + i
+  let phrase = _.reduce(sentence, (memo, i, iteree) => {
+    if(iteree == 1){
+      memo = capitalize(memo);
+    }
+    if (checkForPunctuation(i)) return memo + i;
+    return memo + ' ' + i;
   });
+
+  return phrase
 };

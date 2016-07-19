@@ -1,19 +1,19 @@
 module.exports = {
   destroy: [
-    'destroy',
-    'wipe out',
-    'damage',
-    'smash',
-    'wreck',
-    'ravage',
-    'raze',
-    'ruin',
-    'sabotage',
-    'shatter',
-    'gut',
-    'eradicate',
-    'desolate',
-    'mutilate',
-    'despoil'
+    { past: 'destroyed', present: 'destroy' },
+    { past: 'wiped out', present: 'wipe out' },
+    { past: 'damaged', present: 'damage' },
+    { past: 'smashed', present: 'smash' },
+    { past: 'wrecked', present: 'wreck' },
+    { past: 'ravaged', present: 'ravage' },
+    { past: 'razed', present: 'raze' },
+    { past: 'ruined', present: 'ruin' },
+    { past: 'sabotaged', present: 'sabotage' },
+    { past: 'shattered', present: 'shatter' },
+    { past: 'gutted', present: 'gut' },
+    { past: 'eradicated', present: 'eradicate' },
+    { past: 'desolated', present: 'desolate' },
+    { past: 'mutilated', present: 'mutilate' },
+    { past: 'despoiled', present: 'despoil' }
   ]
 }

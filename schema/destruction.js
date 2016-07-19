@@ -1,5 +1,9 @@
 module.exports = [
   {
+    type: 'clauses',
+    subtype: 'adverb'
+  },
+  {
     type: 'adjectives',
     subtype: 'unexpected'
   },
@@ -8,10 +12,18 @@ module.exports = [
   },
   {
     type: 'verbs',
-    subtype: 'destroy'
+    subtype: 'destroy',
+    tense: 'present'
+  },
+  {
+    type: 'articles'
   },
   {
     type: 'nouns',
     subtype: 'structure'
+  },
+  { 
+    type: 'punctuation',
+    subtype: 'comma'
   }
 ];
