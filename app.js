@@ -1,6 +1,5 @@
 const path = require('path');
 const _ = require('underscore');
-const RandomName = require('node-random-name')
 
 const bot = require('./bot/bot');
 const maker = require('./util/sentence/maker');

@@ -1,4 +1,6 @@
 const _ = require('underscore');
+const RandomName = require('node-random-name')
+
 const capitalize = require('../capitalize');
 
 const checkForPunctuation = (item) => {
@@ -6,19 +8,26 @@ const checkForPunctuation = (item) => {
   return false;
 }
 
-
 module.exports = (schema) => {
   let sentence = _.map(schema, (i) => {
-    var p = '../../models/' + i.type, value
+    var p = '../../models/' + i.type,
+        value;
 
-    if(_.has(i, 'subtype') && _.has(i, 'tense')){
-      value = _.sample(require(p)[i.subtype])[i.tense]
-    } else if (_.has(i, 'tense')) {
-      value = _.sample(require(p))[i.tense]
-    } else if (_.has(i, 'subtype')) {
-      value = _.sample(require(p)[i.subtype])
-    } else {
-      value = _.sample(require(p))
+    switch (true) {
+      case i.type == 'person':
+        value = RandomName({first: 'true'});
+        break;
+      case _.has(i, 'subtype') && _.has(i, 'tense'):
+        value = _.sample(require(p)[i.subtype])[i.tense];
+        break;
+      case _.has(i, 'tense'):
+        value = _.sample(require(p))[i.tense];
+        break;
+      case _.has(i, 'subtype'):
+        value = _.sample(require(p)[i.subtype]);
+        break;
+      default:
+        value = _.sample(require(p));
     }
 
     return value;
