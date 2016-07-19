@@ -4,10 +4,10 @@ const RandomName = require('node-random-name')
 
 const bot = require('./bot/bot');
 const maker = require('./util/sentence/maker');
-const schema = require('./schema/destruction');
+const setUpSchema = require('./schema/setUp/destruction');
 
 const defineAge = require('./util/age');
 const gender = _.sample(['male', 'female']);
 const job = _.sample(require('./models/jobs'));
 
-bot.tweet(maker(schema));
+bot.tweet(maker(setUpSchema));

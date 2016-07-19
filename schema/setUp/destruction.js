@@ -1,3 +1,4 @@
+// When unforseen floods mutilate the lighthouse
 module.exports = [
   {
     type: 'clauses',
@@ -21,9 +22,5 @@ module.exports = [
   {
     type: 'nouns',
     subtype: 'structure'
-  },
-  { 
-    type: 'punctuation',
-    subtype: 'comma'
   }
 ];

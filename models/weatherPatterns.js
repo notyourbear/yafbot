@@ -2,7 +2,7 @@ module.exports = [
   'tornadoes',
   'thunderstorms',
   'floods',
-  'hail',
+  'hailstorms',
   'firestorms',
   'typhoons',
   'earthquakes',
