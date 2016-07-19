@@ -1,4 +1,15 @@
 module.exports = {
+  unexpected: [
+    'unexpected',
+    'unforseen',
+    'unpredicted',
+    'abrupt',
+    'sudden',
+    'unannounced',
+    'unheralded',
+    'precipitous',
+    'startling'
+  ],
   happy: [
     'great',
     'good',

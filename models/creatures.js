@@ -1,5 +1,5 @@
 module.exports = {
-  enemies: [
+  enemy: [
     'aliens',
     'clones',
     'zombies',
@@ -20,7 +20,7 @@ module.exports = {
     'androids',
     'wights'
   ],
-  creatures: [
+  creature: [
     'werewolf',
     'vampire',
     'demi-god',
@@ -30,7 +30,7 @@ module.exports = {
     'goblin',
     'serial killer'
   ],
-  antagonists: [
+  antagonist: [
     'the Overlord',
     'the King of Monsters',
     'the Grim Reaper',
@@ -49,7 +49,7 @@ module.exports = {
     'Long John Silver',
     'Bartelby, the Scrivener'
   ],
-  npcs: [
+  npc: [
     'the Prince',
     'the Princess',
     'the King',
