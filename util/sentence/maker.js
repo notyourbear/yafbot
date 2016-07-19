@@ -1,7 +1,6 @@
 const _ = require('underscore');
 const RandomName = require('node-random-name')
 
-const capitalize = require('../capitalize');
 const age = require('../age');
 
 const checkForPunctuation = (item) => {
@@ -38,10 +37,7 @@ module.exports = (schema) => {
     return value;
   });
 
-  let phrase = _.reduce(sentence, (memo, i, iteree) => {
-    if(iteree == 1){
-      memo = capitalize(memo);
-    }
+  let phrase = _.reduce(sentence, (memo, i) => {
     if (checkForPunctuation(i)) return memo + i;
     return memo + ' ' + i;
   });

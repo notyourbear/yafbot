@@ -15,5 +15,19 @@ module.exports = {
     { past: 'desolated', present: 'desolate' },
     { past: 'mutilated', present: 'mutilate' },
     { past: 'despoiled', present: 'despoil' }
+  ],
+  discover: [
+    { past: 'sought out', present: 'seek out' },
+    { past: 'discovered' , present: 'discover' },
+    { past: 'found', present: 'find' },
+    { past: 'uncovered', present: 'uncover' },
+    { past: 'unearthed', present: 'unearth' },
+    { past: 'located', present: 'locate' },
+    { past: 'ferreted out', present: 'ferret out' },
+  ],
+  must: [
+    'must',
+    'needs to',
+    'has to'
   ]
 }

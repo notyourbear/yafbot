@@ -5,6 +5,10 @@ module.exports = [
     type: 'person'
   },
   {
+    type: 'punctuation',
+    subtype: 'comma'
+  },
+  {
     type: 'age'
   },
   {
