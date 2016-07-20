@@ -12,5 +12,9 @@ module.exports = [
   {
     type: 'adjectives',
     subtype: 'charmed'
+  },
+  {
+    type: 'items',
+    subtype: 'mystical'
   }
 ];

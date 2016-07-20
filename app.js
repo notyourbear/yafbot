@@ -21,5 +21,6 @@ sentence += maker(commaSchema);
 sentence += ' ' + maker(personSchema);
 sentence += ' ' + maker(mustSchema);
 sentence += ' ' + maker(questSchema);
+sentence += ' ' + maker(effectSchema);
 
 bot.tweet(capitalize(sentence));

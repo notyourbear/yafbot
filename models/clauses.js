@@ -4,5 +4,9 @@ module.exports = {
     'after',
     'as',
     'while'
+  ],
+  relative: [
+    'to',
+    'in order to'
   ]
 };

@@ -20,10 +20,14 @@ module.exports = {
     { past: 'sought out', present: 'seek out' },
     { past: 'discovered' , present: 'discover' },
     { past: 'found', present: 'find' },
-    { past: 'uncovered', present: 'uncover' },
     { past: 'unearthed', present: 'unearth' },
     { past: 'located', present: 'locate' },
     { past: 'ferreted out', present: 'ferret out' },
+  ],
+  save: [
+    { past: 'saved', present: 'save' },
+    { past: 'salvaged', present: 'salvage' },
+    { past: 'rescued', present: 'rescue' },
   ],
   must: [
     'must',

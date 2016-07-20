@@ -1,4 +1,3 @@
 module.exports = [
-  'the',
-  'a'
+  'the'
 ];
