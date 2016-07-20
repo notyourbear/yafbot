@@ -8,5 +8,8 @@ module.exports = {
   relative: [
     'to',
     'in order to'
+  ],
+  from: [
+    'from'
   ]
 };

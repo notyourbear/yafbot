@@ -9,6 +9,7 @@ const setUpSchema = require('./schema/setUp/destruction');
 const personSchema = require('./schema/util/person_age_job');
 const effectSchema = require('./schema/effect/findSafety');
 const commaSchema = require('./schema/util/comma');
+const periodSchema = require('./schema/util/period');
 const questSchema = require('./schema/quest/discoverItem');
 const mustSchema = require('./schema/util/must');
 
@@ -22,5 +23,6 @@ sentence += ' ' + maker(personSchema);
 sentence += ' ' + maker(mustSchema);
 sentence += ' ' + maker(questSchema);
 sentence += ' ' + maker(effectSchema);
+sentence += maker(periodSchema);
 
 bot.tweet(capitalize(sentence));

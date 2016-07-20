@@ -13,5 +13,21 @@ module.exports = [
   },
   {
     type: 'articles'
+  },
+  {
+    type: 'groupings',
+    subtype: 'townfolk'
+  },
+  {
+    type: 'clauses',
+    subtype: 'from'
+  },
+  {
+    type: 'adjectives',
+    subtype: 'assured'
+  },
+  {
+    type: 'nouns',
+    subtype: 'doom'
   }
 ];

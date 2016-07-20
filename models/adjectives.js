@@ -70,5 +70,13 @@ module.exports = {
     'nefarious',
     'malicious',
     'vicious'
+  ],
+  assured: [
+    'certain',
+    'assured',
+    'guaranteed',
+    'unquestionable',
+    'indubitable',
+    'sure'
   ]
 };

@@ -23,5 +23,16 @@ module.exports = {
     'trading hall',
     'grain storage',
     'water dam'
+  ],
+  doom: [
+    'doom',
+    'death',
+    'downfall',
+    'calamity',
+    'disaster',
+    'destruction',
+    'tragedy',
+    'catastrophe',
+    'ruin'
   ]
 };
