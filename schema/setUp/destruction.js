@@ -5,10 +5,6 @@ module.exports = [
     subtype: 'adverb'
   },
   {
-    type: 'adjectives',
-    subtype: 'unexpected'
-  },
-  {
     type: 'weatherPatterns'
   },
   {
