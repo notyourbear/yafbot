@@ -11,7 +11,15 @@ module.exports = {
   from: [
     'from'
   ],
+  in: [
+    'in',
+    'at',
+    'near'
+  ],
   a: [
     'a'
+  ],
+  their: [
+    'their'
   ]
 };

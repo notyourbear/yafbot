@@ -1,4 +1,9 @@
 module.exports = {
+  town: [
+    'village',
+    'city',
+    'town'
+  ],
   structure: [
     'village',
     'wall',

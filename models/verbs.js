@@ -29,6 +29,13 @@ module.exports = {
     { past: 'salvaged', present: 'salvage' },
     { past: 'rescued', present: 'rescue' },
   ],
+  arrive: [
+    { past: 'arrived' , present: 'arrives' },
+    { past: 'appeared' , present: 'appears' },
+    { past: 'showed up' , present: 'shows up' },
+    { past: 'turned up' , present: 'turns up' },
+    { past: 'visited' , present: 'visits' }
+  ],
   must: [
     'must',
     'needs to',
