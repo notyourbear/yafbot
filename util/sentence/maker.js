@@ -1,5 +1,4 @@
 const _ = require('underscore');
-const RandomName = require('node-random-name')
 
 const age = require('../age');
 
@@ -8,7 +7,7 @@ const checkForPunctuation = (item) => {
   return false;
 }
 
-module.exports = (schema) => {
+module.exports = (schema, person) => {
 
   let sentence = _.map(schema, (i) => {
     //deal with multi-input
@@ -21,10 +20,13 @@ module.exports = (schema) => {
 
     switch (true) {
       case i.type == 'person':
-        value = RandomName({first: 'true'});
+        value = person.name;
         break;
       case i.type == 'age':
         value = age().sentence;
+        break;
+      case i.type == 'pronoun':
+        value = _.sample(require(p)[i.subtype])[i.gender];
         break;
       case _.has(i, 'subtype') && _.has(i, 'tense'):
         value = _.sample(require(p)[i.subtype])[i.tense];

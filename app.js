@@ -1,5 +1,6 @@
 const path = require('path');
 const _ = require('underscore');
+const RandomName = require('node-random-name')
 
 const bot = require('./bot/bot');
 const maker = require('./util/sentence/maker');
@@ -18,14 +19,18 @@ const defineAge = require('./util/age');
 const gender = _.sample(['male', 'female']);
 const job = _.sample(require('./models/jobs'));
 
+var person = { name: RandomName({first: 'true', gender: gender}),  gender: gender };
+
 var sentence = maker(setUpSchema);
 sentence += maker(commaSchema);
-sentence += ' ' + maker(personSchema);
+sentence += ' ' + maker(personSchema, person);
 sentence += ' ' + maker(mustSchema);
 sentence += ' ' + maker(questSchema);
 sentence += ' ' + maker(effectSchema);
 sentence += maker(periodSchema);
 
-sentence = maker(arrivalSchema);
+sentence = maker(arrivalSchema, person);
+sentence += maker(commaSchema);
+sentence += ' ' + maker(personSchema, person);
 
 bot.tweet(capitalize(sentence));

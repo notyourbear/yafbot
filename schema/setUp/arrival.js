@@ -7,6 +7,6 @@ module.exports = [
     { type: 'persons', subtype: 'scientific' } ],
   { type: 'verbs', subtype: 'arrive', tense: 'present' },
   { type: 'clauses', subtype: 'in' },
-  { type: 'clauses', subtype: 'their' },
+  { type: 'pronouns', subtype: 'possessive' },
   { type: 'nouns', subtype: 'town' },
 ]

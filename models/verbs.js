@@ -34,7 +34,6 @@ module.exports = {
     { past: 'appeared' , present: 'appears' },
     { past: 'showed up' , present: 'shows up' },
     { past: 'turned up' , present: 'turns up' },
-    { past: 'visited' , present: 'visits' }
   ],
   must: [
     'must',
