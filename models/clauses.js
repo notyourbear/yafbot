@@ -2,8 +2,7 @@ module.exports = {
   adverb: [
     'when',
     'after',
-    'as',
-    'while'
+    'as'
   ],
   relative: [
     'to',
@@ -11,5 +10,8 @@ module.exports = {
   ],
   from: [
     'from'
+  ],
+  a: [
+    'a'
   ]
 };

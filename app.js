@@ -12,6 +12,7 @@ const commaSchema = require('./schema/util/comma');
 const periodSchema = require('./schema/util/period');
 const questSchema = require('./schema/quest/discoverItem');
 const mustSchema = require('./schema/util/must');
+const arrivalSchema = require('./schema/setUp/arrival');
 
 const defineAge = require('./util/age');
 const gender = _.sample(['male', 'female']);
@@ -24,5 +25,7 @@ sentence += ' ' + maker(mustSchema);
 sentence += ' ' + maker(questSchema);
 sentence += ' ' + maker(effectSchema);
 sentence += maker(periodSchema);
+
+sentence = maker(arrivalSchema);
 
 bot.tweet(capitalize(sentence));

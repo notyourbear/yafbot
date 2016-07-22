@@ -11,6 +11,11 @@ const checkForPunctuation = (item) => {
 module.exports = (schema) => {
 
   let sentence = _.map(schema, (i) => {
+    //deal with multi-input
+    if(_.isArray(i) == true){
+      i = _.sample(i)
+    }
+
     var p = '../../models/' + i.type,
         value;
 

@@ -78,5 +78,13 @@ module.exports = {
     'unquestionable',
     'indubitable',
     'sure'
+  ],
+  mysterious: [
+    'mysterious',
+    'cryptic',
+    'enigmatic',
+    'mystifying',
+    'strange',
+    'weird'
   ]
 };
