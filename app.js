@@ -3,8 +3,8 @@ const _ = require('underscore');
 const RandomName = require('node-random-name')
 
 const bot = require('./bot/bot');
-const maker = require('./util/sentence/maker');
 const capitalize = require('./util/capitalize');
+const schemaLoader = require('./util/sentence/schemaLoader');
 
 const setUpSchema = require('./schema/setUp/destruction');
 const personSchema = require('./schema/util/person_age_job');
@@ -14,23 +14,18 @@ const periodSchema = require('./schema/util/period');
 const questSchema = require('./schema/quest/discoverItem');
 const mustSchema = require('./schema/util/must');
 const arrivalSchema = require('./schema/setUp/arrival');
-
 const defineAge = require('./util/age');
 const gender = _.sample(['male', 'female']);
 const job = _.sample(require('./models/jobs'));
 
 var person = { name: RandomName({first: 'true', gender: gender}),  gender: gender };
 
-var sentence = maker(setUpSchema);
-sentence += maker(commaSchema);
-sentence += ' ' + maker(personSchema, person);
-sentence += ' ' + maker(mustSchema);
-sentence += ' ' + maker(questSchema);
-sentence += ' ' + maker(effectSchema);
-sentence += maker(periodSchema);
+var schemas = [
+	[arrivalSchema, commaSchema, personSchema, mustSchema, questSchema, effectSchema, periodSchema],
+	[setUpSchema, commaSchema, personSchema, mustSchema, questSchema, effectSchema, periodSchema]
+];
 
-sentence = maker(arrivalSchema, person);
-sentence += maker(commaSchema);
-sentence += ' ' + maker(personSchema, person);
+var schema = _.sample(schemas);
+var sentence = schemaLoader(schema, person)
 
 bot.tweet(capitalize(sentence));
