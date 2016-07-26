@@ -9,7 +9,8 @@ module.exports = [
     subtype: 'comma'
   },
   {
-    type: 'age'
+    type: 'age',
+    subtype: 'sentence'
   },
   {
     type: 'jobs'

@@ -17,6 +17,7 @@ module.exports = (low, high) => {
 
   return {
     var: num,
-    sentence: pronoun + ' ' + num + '-year old'
+    sentence: pronoun + ' ' + num + '-year old',
+    age: num + '-year old'
   };
 }

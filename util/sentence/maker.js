@@ -23,7 +23,11 @@ module.exports = (schema, person) => {
         value = person.name;
         break;
       case i.type == 'age':
-        value = age().sentence;
+        if(i.subtype == 'sentence'){
+          value = age().sentence;
+        } else if (i.subtype == 'age') {
+          value = age().age;
+        }
         break;
       case i.type == 'pronoun':
         value = _.sample(require(p)[i.subtype])[i.gender];

@@ -2,9 +2,10 @@
 
 module.exports = [
   {
-    type: 'person'
+    type: 'age',
+    subtype: 'age'
   },
   {
-    type: 'age'
+    type: 'person'
   }
 ];
