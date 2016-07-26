@@ -6,17 +6,18 @@ const bot = require('./bot/bot');
 const capitalize = require('./util/capitalize');
 const schemaLoader = require('./util/sentence/schemaLoader');
 
-const setUpSchema = require('./schema/setUp/destruction');
-const personSchema = require('./schema/util/person_age_job');
-const effectSchema = require('./schema/effect/findSafety');
-const commaSchema = require('./schema/util/comma');
-const periodSchema = require('./schema/util/period');
-const questSchema = require('./schema/quest/discoverItem');
-const mustSchema = require('./schema/util/must');
-const arrivalSchema = require('./schema/setUp/arrival');
 const defineAge = require('./util/age');
 const gender = _.sample(['male', 'female']);
 const job = _.sample(require('./models/jobs'));
+
+const setUpSchema = 'schema/setUp/destruction'
+const personSchema = 'schema/util/person_age_job'
+const effectSchema = 'schema/effect/findSafety'
+const commaSchema = 'schema/util/comma'
+const periodSchema = 'schema/util/period'
+const questSchema = 'schema/quest/discoverItem'
+const mustSchema = 'schema/util/must'
+const arrivalSchema = 'schema/setUp/arrival'
 
 var person = { name: RandomName({first: 'true', gender: gender}),  gender: gender };
 
