@@ -8,11 +8,9 @@ module.exports = (schemas, person) => {
 
 		switch(true){
 			case i == 1:
-				return maker(require(path.join(__dirname,'../../',memo))) + maker(schema,person);
-			case (schema[0].type == 'punctuation'):
-				return memo + maker(schema, person);
+				return maker(require(path.join(__dirname,'../../',memo)), person) + maker(schema,person);
 			default:
-				return memo + " " + maker(schema,person);
+				return memo + maker(schema, person);
 		}
 	});
 }

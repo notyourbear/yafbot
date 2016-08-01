@@ -1,4 +1,5 @@
 module.exports = {
   comma: [','],
-  period: ['.']
+  period: ['.'],
+  space: [' ']
 };
