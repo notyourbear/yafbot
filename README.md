@@ -1,2 +1,1 @@
-pronouning
-switch schemas
+create a schema for timed processions
