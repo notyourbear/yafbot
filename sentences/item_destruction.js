@@ -9,6 +9,8 @@ module.exports = [
   'schema/util/space',
   'schema/effect/findSafety',
   'schema/util/space',
+  'schema/util/adverb',
+  'schema/util/space',
   'schema/setUp/destruction',
   'schema/util/period'
 ];

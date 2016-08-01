@@ -1,6 +1,8 @@
 _ = require('underscore');
 
 module.exports = [
+  'schema/util/adverb',
+  'schema/util/space',
   'schema/setUp/arrival',
   'schema/util/comma',
   'schema/util/space',

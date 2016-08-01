@@ -1,10 +1,6 @@
 // When unforseen floods mutilate the lighthouse
 module.exports = [
   {
-    type: 'clauses',
-    subtype: 'adverb'
-  },
-  {
     type: 'weatherPatterns'
   },
   {
