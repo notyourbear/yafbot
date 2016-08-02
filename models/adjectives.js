@@ -28,6 +28,17 @@ module.exports = {
     'captivating',
     'jolly'
   ],
+  forbidden: [
+    'forbidden',
+    'dark',
+    'evil',
+    'black',
+    'misty',
+    'gloomy',
+    'weird',
+    'shadowy',
+    'whispering'
+  ],
   charmed: [
     'magical',
     'thaumatic',

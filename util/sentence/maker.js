@@ -2,6 +2,8 @@ const _ = require('underscore');
 
 const age = require('../age');
 
+const capitalize = require('../capitalize')
+
 const checkForPunctuation = (item) => {
   if (_.contains(['.', ',', ':', ';', '!'], item)) return true;
   return false;
@@ -43,6 +45,12 @@ module.exports = (schema, person) => {
         break;
       default:
         value = _.sample(require(p));
+    }
+
+    if(_.has(i, 'capitalized')){
+      if(i.capitalized === true){
+        value = capitalize(value);
+      }
     }
 
     return value;

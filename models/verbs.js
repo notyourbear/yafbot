@@ -24,6 +24,11 @@ module.exports = {
     { past: 'located', present: 'locate' },
     { past: 'ferreted out', present: 'ferret out' },
   ],
+  explore: [
+    { past: 'explored', present: 'explore' },
+    { past: 'delved into', present: 'delve into' },
+    { past: 'braved', present: 'brave' }
+  ],
   save: [
     { past: 'saved', present: 'save' },
     { past: 'salvaged', present: 'salvage' },

@@ -8,18 +8,13 @@ module.exports = {
     'to',
     'in order to'
   ],
-  from: [
-    'from'
-  ],
+  from: ['from'],
   in: [
     'in',
     'at',
     'near'
   ],
-  a: [
-    'a'
-  ],
-  their: [
-    'their'
-  ]
+  a: ['a'],
+  the: ['the'],
+  their: ['their']
 };
