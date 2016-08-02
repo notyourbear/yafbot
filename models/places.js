@@ -5,5 +5,13 @@ module.exports = {
     'temple',
     'ruins',
     'island'
+  ],
+  town: [
+    'town',
+    'village',
+    'city',
+    'township',
+    'hamlet',
+    'the shelter'
   ]
 };

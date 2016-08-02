@@ -4,6 +4,14 @@ module.exports = {
     'city',
     'town'
   ],
+  different: [
+    'different',
+    'abnormal',
+  ],
+  feeling : [
+    'feeling',
+    'sense'
+  ],
   structure: [
     'village',
     'wall',
