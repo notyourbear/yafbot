@@ -31,8 +31,8 @@ module.exports = (schema, person) => {
           value = age().age;
         }
         break;
-      case i.type == 'pronoun':
-        value = _.sample(require(p)[i.subtype])[i.gender];
+      case i.type == 'pronouns':
+        value = require(p)[i.subtype][person.gender];
         break;
       case _.has(i, 'subtype') && _.has(i, 'tense'):
         value = _.sample(require(p)[i.subtype])[i.tense];
