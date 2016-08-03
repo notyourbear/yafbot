@@ -10,8 +10,8 @@ module.exports = [
     subtype: 'must'
   },
   {
-    type: 'verb',
-    subtype: 'find',
+    type: 'verbs',
+    subtype: 'discover',
     tense: 'present'
   },
   {
@@ -19,7 +19,7 @@ module.exports = [
     subtype: 'possessive'
   },
   [
-    { type: 'adjective', subtype: 'innate' }, { type: 'adjective', subtype: 'true' }
+    { type: 'adjectives', subtype: 'innate' }, { type: 'adjectives', subtype: 'true' }
   ],
   {
     type: 'nouns',

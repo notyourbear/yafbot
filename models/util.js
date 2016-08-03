@@ -1,5 +1,5 @@
 module.exports = {
-  others: ['everyone else', 'the rest'],
+  others: ['everyone else', 'all others'],
   must: ['must'],
   has: ['has'],
   in: ['in']

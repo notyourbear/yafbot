@@ -4,5 +4,5 @@ module.exports = [
   // require('./arrival_item'),
   // require('./item_arrival'),
   // require('./destruction_place_item'),
-  require('./potential')
+  require('./outsider_arrival_potential')
 ];
