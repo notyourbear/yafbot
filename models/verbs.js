@@ -33,6 +33,10 @@ module.exports = {
     { past: 'salvaged', present: 'salvage' },
     { past: 'rescued', present: 'rescue' },
   ],
+  savePeople: [
+    { past: 'saved', present: 'save' },
+    { past: 'rescued', present: 'rescue' },
+  ],
   arrive: [
     { past: 'arrived' , present: 'arrives' },
     { past: 'appeared' , present: 'appears' },

@@ -18,5 +18,6 @@ module.exports = {
   the: ['the'],
   their: ['their'],
   that: ['that'],
-  is: ['is']
+  is: ['is'],
+  and: ['save']
 };

@@ -5,5 +5,9 @@ module.exports = {
     'community',
     'neighbors',
     'citizens'
+  ],
+  familiar: [
+    'friends',
+    'family'
   ]
 }

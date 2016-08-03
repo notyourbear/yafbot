@@ -1,7 +1,7 @@
 _ = require('underscore');
 
 module.exports = [
-  _.sample(['schema/util/person_age_job', 'schema/util/person_age']),
+  _.sample(['schema/util/person_age', 'schema/util/person']),
   'schema/util/space',
   'schema/util/has',
   'schema/util/space',
@@ -15,5 +15,6 @@ module.exports = [
   'schema/util/space',
   'schema/quest/truePower',
   'schema/util/space',
-
+  'schema/effect/findSafety',
+  'schema/util/period'
 ];
