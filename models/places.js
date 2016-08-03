@@ -10,8 +10,6 @@ module.exports = {
     'town',
     'village',
     'city',
-    'township',
-    'hamlet',
-    'the shelter'
+    'shelter'
   ]
 };

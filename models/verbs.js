@@ -22,7 +22,6 @@ module.exports = {
     { past: 'found', present: 'find' },
     { past: 'unearthed', present: 'unearth' },
     { past: 'located', present: 'locate' },
-    { past: 'ferreted out', present: 'ferret out' },
   ],
   explore: [
     { past: 'explored', present: 'explore' },

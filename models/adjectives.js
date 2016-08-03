@@ -1,4 +1,15 @@
 module.exports = {
+  innate: [
+    'hidden',
+    'innate',
+    'inherent',
+    'inborn',
+    'intrinsic'
+  ],
+  true: [
+    'true',
+    'undeniable'
+  ],
   unexpected: [
     'unexpected',
     'unforseen',

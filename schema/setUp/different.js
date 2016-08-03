@@ -1,14 +1,15 @@
-// has a feeling that
+// has the feeling that
 
 module.exports = [
   { type: 'clauses', subtype: 'the' },
-  { type: 'noun', subtype: 'feeling' },
+  { type: 'nouns', subtype: 'feeling' },
   { type: 'clauses', subtype: 'that' },
-  { type: 'pronoun', subtype: 'subject' },
+  { type: 'pronouns', subtype: 'subject' },
   { type: 'clauses', subtype: 'is' },
-  { type: 'noun', subtype: 'different' },
+  { type: 'nouns', subtype: 'different' },
   { type: 'clauses', subtype: 'from' },
   { type: 'util', subtype: 'others'},
-  { type: 'clauses', subtype: 'in' },
+  { type: 'util', subtype: 'in' },
+  { type: 'pronouns', subtype: 'possessive' },
   { type: 'places', subtype: 'town'}
 ]

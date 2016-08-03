@@ -4,6 +4,13 @@ module.exports = {
     'city',
     'town'
   ],
+  power: [
+    'power',
+    'potential',
+    'talent',
+    'capacity',
+    'capabilities'
+  ],
   different: [
     'different',
     'abnormal',
