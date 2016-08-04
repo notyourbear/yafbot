@@ -20,7 +20,6 @@ var options = {
   }
 }
 
-
 var sentence = schemaLoader(schema, options)
 
 bot.tweet(capitalize(sentence));
