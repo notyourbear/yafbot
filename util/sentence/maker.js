@@ -9,7 +9,7 @@ const checkForPunctuation = (item) => {
   return false;
 }
 
-module.exports = (schema, person) => {
+module.exports = (schema, options) => {
 
   let sentence = _.map(schema, (i) => {
     //deal with multi-input
@@ -22,7 +22,7 @@ module.exports = (schema, person) => {
 
     switch (true) {
       case i.type == 'person':
-        value = person.name;
+        value = options.person.name;
         break;
       case i.type == 'age':
         if(i.subtype == 'sentence'){
@@ -32,7 +32,7 @@ module.exports = (schema, person) => {
         }
         break;
       case i.type == 'pronouns':
-        value = require(p)[i.subtype][person.gender];
+        value = require(p)[i.subtype][options.person.gender];
         break;
       case _.has(i, 'subtype') && _.has(i, 'tense'):
         value = _.sample(require(p)[i.subtype])[i.tense];

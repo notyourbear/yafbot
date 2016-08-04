@@ -13,8 +13,14 @@ const job = _.sample(require('./models/jobs'));
 const schemas = require('./sentences/index');
 const schema = _.sample(schemas);
 
-var person = { name: RandomName({first: 'true', gender: gender}),  gender: gender };
+var options = {
+  person: {
+    name: RandomName({first: 'true', gender: gender}),
+    gender: gender
+  }
+}
 
-var sentence = schemaLoader(schema, person)
+
+var sentence = schemaLoader(schema, options)
 
 bot.tweet(capitalize(sentence));

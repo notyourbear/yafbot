@@ -1,20 +1,20 @@
 _ = require('underscore');
 
 module.exports = [
-  _.sample(['schema/util/person_age', 'schema/util/person']),
-  'schema/util/space',
-  'schema/util/has',
-  'schema/util/space',
-  'schema/setUp/different',
-  'schema/util/period',
-  'schema/util/space',
-  'schema/util/adverb', //need a way to add capitalization here
-  'schema/util/space',
-  'schema/setUp/arrival',
-  'schema/util/comma',
-  'schema/util/space',
-  'schema/quest/truePower',
-  'schema/util/space',
-  'schema/effect/findSafety',
-  'schema/util/period'
+  { schema: ['schema/util/person_age', 'schema/util/person'], },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/util/has', },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/setUp/different', },
+  { schema: 'schema/util/period', },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/util/adverb', },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/setUp/arrival', },
+  { schema: 'schema/util/comma', },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/quest/truePower', },
+  { schema: 'schema/util/space', },
+  { schema: 'schema/effect/findSafety', },
+  { schema: 'schema/util/period', }
 ];
