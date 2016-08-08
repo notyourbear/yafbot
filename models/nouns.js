@@ -54,5 +54,27 @@ module.exports = {
     'tragedy',
     'catastrophe',
     'ruin'
+  ],
+  calamityWar: [
+    'invasion'
+  ],
+  calamityNatural: [
+    'famine',
+    'plague',
+    'pandemic'
+  ],
+  animosity: [
+    'animosity',
+    'turmoil',
+    'disquiet',
+    'uneasiness',
+    'an unease',
+    'agitation',
+    'malice',
+    'bad blood',
+    'resentment',
+    'antagonism',
+    'ill will',
+    'hostility'
   ]
 };

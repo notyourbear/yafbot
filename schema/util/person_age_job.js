@@ -14,5 +14,9 @@ module.exports = [
   },
   {
     type: 'jobs'
+  },
+  {
+    type: 'punctuation',
+    subtype: 'comma'
   }
 ];

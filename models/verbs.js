@@ -30,8 +30,7 @@ module.exports = {
   ],
   save: [
     { past: 'saved', present: 'save' },
-    { past: 'salvaged', present: 'salvage' },
-    { past: 'rescued', present: 'rescue' },
+    { past: 'rescued', present: 'rescue' }
   ],
   savePeople: [
     { past: 'saved', present: 'save' },
@@ -43,9 +42,35 @@ module.exports = {
     { past: 'showed up' , present: 'shows up' },
     { past: 'turned up' , present: 'turns up' },
   ],
+  cause: [
+    { past: 'caused', present: 'causes' },
+    { past: 'impelled', present: 'impels' },
+    { past: 'aroused', present: 'arrouses' },
+    { past: 'excited', present: 'excites' },
+    { past: 'instigated', present: 'instigates' },
+    { past: 'prompted', present: 'prompts'},
+    { past: 'roused', present: 'rouses' },
+    { past: 'worked up', present: 'works up' },
+    { past: 'spurred', present: 'spurs' },
+  ],
   must: [
     'must',
     'needs to',
     'has to'
+  ],
+  grow: [
+    {perfect: 'to fester', present: 'fester'},
+    {perfect: 'to grow', present: 'grow'},
+    {perfect: 'to brew', present: 'brew'},
+    {perfect: 'to sprout', present: 'sprout'},
+    {perfect: 'to develop', present: 'develop'},
+    {perfect: 'to cultivate', present: 'cultivate'},
+    {perfect: 'to breed', present: 'breed'},
+    {perfect: 'to expand', present: 'expand'},
+    {perfect: 'to build', present: 'build'},
+    {perfect: 'to thrive', present: 'thrive'},
+    {perfect: 'to swell', present: 'swell'},
+    {perfect: 'to develop', present: 'develop'},
+    {perfect: 'to flourish', present: 'flourish'}
   ]
 }

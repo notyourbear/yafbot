@@ -19,5 +19,16 @@ module.exports = {
   their: ['their'],
   that: ['that'],
   is: ['is'],
-  and: ['save']
+  and: ['save'],
+  amongst: [
+    'amongst',
+    'within',
+    'in the midst of',
+    'throughout',
+    'between',
+    'betwixt',
+    'among',
+    'amidst',
+    'amid'
+  ]
 };

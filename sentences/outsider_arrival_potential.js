@@ -8,7 +8,7 @@ module.exports = [
   { schema: 'schema/util/adverb', options: {capitalize: true}},
   { schema: 'schema/setUp/arrival', },
   { schema: 'schema/util/comma', },
-  { schema: 'schema/quest/truePower', },
+  { schema: 'schema/quest/truePower_subject', },
   { schema: 'schema/effect/findSafety' },
   { schema: 'schema/util/period', }
 ];

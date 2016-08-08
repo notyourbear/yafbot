@@ -12,5 +12,4 @@ module.exports = [
   'cyclones',
   'ice storms',
   'snowstorms',
-  'downbursts'
 ];

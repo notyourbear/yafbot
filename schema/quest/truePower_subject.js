@@ -1,6 +1,8 @@
-// she must find...her true/hidden
-
 module.exports = [
+  {
+    type: 'pronouns',
+    subtype: 'subject'
+  },
   {
     type: 'util',
     subtype: 'must'

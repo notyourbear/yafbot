@@ -31,7 +31,11 @@ module.exports = (schemas, options) => {
 
 		switch(true){
 			case i == 1:
-				return maker(require(path.join(__dirname,'../../', m)), options) + maker(space) + maker(schema, options);
+				if (schema.length == 1 && schema[0].type == 'punctuation'){
+					return maker(require(path.join(__dirname,'../../', m)), options) + maker(schema, options);
+				} else {
+					return maker(require(path.join(__dirname,'../../', m)), options) + maker(space) + maker(schema, options);
+				}
 			case schema.length == 1 && schema[0].type == 'punctuation':
 				return m + maker(schema, options);
 			case _.has(input, 'options'):
