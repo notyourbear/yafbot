@@ -27,10 +27,7 @@ Bot.tweet = (text, self) => {
   if(_.isString(part2)){
     Bot.tweet(part2, true)
   }
-  // what needs to happen?
-  // if its larger that 140 it needs to be cut up into parts
-  // the first part will be tweeted,
-  // the second will be sent through and bot tweeted with @...
+
   // this.post('statuses/update', {status: text}, function(err, data, response){
   //   if (err) {
   //     console.log(err);
