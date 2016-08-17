@@ -4,6 +4,7 @@ const RandomName = require('node-random-name')
 
 const bot = require('./bot/bot');
 const capitalize = require('./util/capitalize');
+const anvsa = require('./util/anvsa');
 const schemaLoader = require('./util/sentence/schemaLoader');
 
 const defineAge = require('./util/age');
@@ -22,4 +23,4 @@ var options = {
 
 var sentence = schemaLoader(schema, options)
 
-bot.tweet(capitalize(sentence));
+bot.tweet(anvsa(capitalize(sentence)));
