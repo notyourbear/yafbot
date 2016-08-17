@@ -23,6 +23,3 @@ const anvsa = (str) => {
   }
 
 module.exports = anvsa;
-
-
-//fuck that i have a better idea. split into an array and then map...
