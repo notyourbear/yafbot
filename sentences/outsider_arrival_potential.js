@@ -1,14 +1,18 @@
 _ = require('underscore');
 
 module.exports = [
-  { schema: ['schema/util/person_age', 'schema/util/person'], },
-  { schema: 'schema/util/has', },
-  { schema: 'schema/setUp/different'},
-  { schema: 'schema/util/period'},
-  { schema: 'schema/util/adverb', options: {capitalize: true}},
-  { schema: 'schema/setUp/arrival', },
-  { schema: 'schema/util/comma', },
-  { schema: 'schema/quest/truePower_subject', },
-  { schema: 'schema/effect/findSafety' },
-  { schema: 'schema/util/period', }
+  _.sample(['schema/util/person_age', 'schema/util/person']),
+  'schema/util/has',
+  'schema/setUp/different',
+  'schema/util/period',
+  'schema/util/adverb',
+  'schema/setUp/arrival',
+  'schema/util/comma',
+  'schema/quest/truePower_subject',
+  'schema/effect/findSafety',
+  'schema/util/comma',
+  'schema/util/while',
+  'schema/util/subject',
+  'schema/feels/feeling_first_time',
+  'schema/util/period',
 ];

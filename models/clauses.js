@@ -14,6 +14,7 @@ module.exports = {
     'at',
     'near'
   ],
+  while: ['all while', 'while', 'as'],
   a: ['a'],
   the: ['the'],
   their: ['their'],

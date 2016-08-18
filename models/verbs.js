@@ -1,4 +1,10 @@
 module.exports = {
+  deal: [
+    {past: 'dealt with', present: 'deals with', perfect: 'to deal with' },
+    {past: 'figured out', present: 'figures out', perfect: 'to figure out' },
+    {past: 'unraveled', present: 'unravels', perfect: 'to unravel' },
+    {past: 'reasoned with', present: 'reasons with', perfect: 'to reason with' }
+  ],
   destroy: [
     { past: 'destroyed', present: 'destroy' },
     { past: 'wiped out', present: 'wipe out' },
@@ -47,7 +53,6 @@ module.exports = {
     { past: 'impelled', present: 'impels' },
     { past: 'aroused', present: 'arrouses' },
     { past: 'excited', present: 'excites' },
-    { past: 'instigated', present: 'instigates' },
     { past: 'prompted', present: 'prompts'},
     { past: 'roused', present: 'rouses' },
     { past: 'worked up', present: 'works up' },

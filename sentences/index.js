@@ -6,5 +6,6 @@ module.exports = [
   require('./destruction_place_item'),
   require('./outsider_arrival_potential'),
   require('./animosity_truePower'),
-  require('./truePower_animosity')
+  require('./truePower_animosity'),
+  require('./feelings_truePower_animosity')
 ];
