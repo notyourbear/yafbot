@@ -1,4 +1,5 @@
 const Twit = require('twit');
+const _ = require('underscore');
 const Config = require('../config.js')
 
 var Bot = new Twit({
@@ -11,12 +12,35 @@ var Bot = new Twit({
 
 Bot.tweet = (text, self) => {
   var part1, part2;
-  if(text.length >= 140){
-    part1 = text.slice(0, 140)
-    part2 = text.slice(140)
+  if(text.length >= 136){
+    breakIndex = _.lastIndexOf(text, ' ', 136)
+    part1 = text.slice(0, breakIndex) + '...'
+    part2 = ' ...' + text.slice(breakIndex + 1)
   } else {
     part1 = text
   }
+
+  // if(self !== true){
+  //   Bot.post('statuses/update', {status: part1}, (err, data, response) => {
+  //     if (err) {
+  //       console.log(err);
+  //     } else {
+  //       console.log('success!:', data);
+  //     }
+  //   });
+  // } else {
+  //   Bot.post('statuses/update', {status:'@young_adult_fic' + part1}, (err, data, response) => {
+  //     if (err) {
+  //       console.log(err);
+  //     } else {
+  //       console.log('success!:', data);
+  //     }
+  //   });
+  // }
+  //
+  // if(_.isString(part2)){
+  //   Bot.tweet(part2, true)
+  // }
 
   if(self !== true){
     console.log(part1)
@@ -27,14 +51,6 @@ Bot.tweet = (text, self) => {
   if(_.isString(part2)){
     Bot.tweet(part2, true)
   }
-
-  // this.post('statuses/update', {status: text}, function(err, data, response){
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     console.log('success!:', data);
-  //   }
-  // });
 }
 
 module.exports = Bot;
