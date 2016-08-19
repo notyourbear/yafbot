@@ -15,7 +15,7 @@ Bot.tweet = (text, self) => {
   if(text.length >= 136){
     breakIndex = _.lastIndexOf(text, ' ', 136)
     part1 = text.slice(0, breakIndex) + '...'
-    part2 = ' ...' + text.slice(breakIndex + 1)
+    part2 = text.slice(breakIndex)
   } else {
     part1 = text
   }
@@ -29,7 +29,7 @@ Bot.tweet = (text, self) => {
   //     }
   //   });
   // } else {
-  //   Bot.post('statuses/update', {status:'@young_adult_fic' + part1}, (err, data, response) => {
+  //   Bot.post('statuses/update', {status:part1}, (err, data, response) => {
   //     if (err) {
   //       console.log(err);
   //     } else {
@@ -45,7 +45,7 @@ Bot.tweet = (text, self) => {
   if(self !== true){
     console.log(part1)
   } else {
-    console.log('@young_adult_fic' + part1)
+    console.log(part1)
   }
 
   if(_.isString(part2)){
