@@ -5,7 +5,7 @@ module.exports = [
   'schema/util/has',
   'schema/setUp/different',
   'schema/util/period',
-  'schema/util/adverb',
+  { schema: 'schema/util/adverb', options: {capitalize: true}},
   'schema/setUp/arrival',
   'schema/util/comma',
   'schema/quest/truePower_subject',

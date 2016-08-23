@@ -15,7 +15,7 @@ Bot.tweet = (text, self) => {
   if(text.length >= 136){
     breakIndex = _.lastIndexOf(text, ' ', 136)
     part1 = text.slice(0, breakIndex) + '...'
-    part2 = text.slice(breakIndex)
+    part2 = '...' + text.slice(breakIndex + 1)
   } else {
     part1 = text
   }

@@ -8,7 +8,7 @@ module.exports = {
     'power',
     'potential',
     'talent',
-    'capacity',
+    'capacities',
     'capabilities'
   ],
   different: [
