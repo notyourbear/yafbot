@@ -6,6 +6,12 @@ module.exports = {
     'inborn',
     'intrinsic'
   ],
+  marauding: [
+    'marauding',
+    'despoiling',
+    'raiding',
+    'ransacking'
+  ],
   true: [
     'true',
     'undeniable'

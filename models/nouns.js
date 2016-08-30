@@ -76,5 +76,36 @@ module.exports = {
     'antagonism',
     'ill will',
     'hostility'
+  ],
+  item: [
+    'amulet',
+    'perl',
+    'ring',
+    'cloak',
+    'book',
+    'tome',
+    'treasure',
+    'map',
+    'box'
+  ],
+  weapon: [
+    'staff',
+    'sword',
+    'blade',
+    'knife',
+    'hammer',
+    'axe'
+  ],
+  horde: [
+    'horde',
+    'clan',
+    'group',
+    'multitude',
+    'swarm',
+    'mob',
+    'gang',
+    'crew',
+    'band',
+    'host'
   ]
 };

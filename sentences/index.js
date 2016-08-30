@@ -4,8 +4,9 @@ module.exports = [
   // require('./arrival_item'),
   // require('./item_arrival'),
   // require('./destruction_place_item'),
-  require('./outsider_arrival_potential'),
+  // require('./outsider_arrival_potential'),
   // require('./animosity_truePower'),
   // require('./truePower_animosity'),
   // require('./feelings_truePower_animosity')
+  require('./person_finding_power_save')
 ];

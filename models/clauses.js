@@ -1,8 +1,7 @@
 module.exports = {
   adverb: [
     'when',
-    'after',
-    'as'
+    'after'
   ],
   relative: [
     'to',
@@ -15,6 +14,7 @@ module.exports = {
     'near'
   ],
   while: ['all while', 'while', 'as'],
+  of: ['of'],
   a: ['a'],
   the: ['the'],
   their: ['their'],

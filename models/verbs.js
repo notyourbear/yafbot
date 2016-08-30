@@ -23,11 +23,10 @@ module.exports = {
     { past: 'despoiled', present: 'despoil' }
   ],
   discover: [
-    { past: 'sought out', present: 'seek out' },
-    { past: 'discovered' , present: 'discover' },
-    { past: 'found', present: 'find' },
-    { past: 'unearthed', present: 'unearth' },
-    { past: 'located', present: 'locate' },
+    { past: 'discovered' , present: 'discover', presentPerfect: 'discovers' },
+    { past: 'found', present: 'find', presentPerfect: 'finds' },
+    { past: 'unearthed', present: 'unearth', presentPerfect: 'unearths' },
+    { past: 'located', present: 'locate', presentPerfect: 'locates' },
   ],
   explore: [
     { past: 'explored', present: 'explore' },
