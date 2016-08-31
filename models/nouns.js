@@ -107,5 +107,14 @@ module.exports = {
     'crew',
     'band',
     'host'
+  ],
+  portal: [
+    'portal',
+    'gateway',
+    'wormhole',
+    'door',
+    'passageway',
+    'entrance',
+    'entryway'
   ]
 };

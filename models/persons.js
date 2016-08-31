@@ -17,5 +17,20 @@ module.exports = {
   scientific: [
     'engineer',
     'alchemist'
+  ],
+  royalty: [
+    'prince',
+    'princess',
+    'king',
+    'queen',
+    'archduke',
+    'duchess',
+    'duke',
+    'archduchess',
+    'prime minister',
+    'president',
+    'lord',
+    'emperor',
+    'empress'
   ]
 }

@@ -76,5 +76,12 @@ module.exports = {
     {perfect: 'to swell', present: 'swell'},
     {perfect: 'to develop', present: 'develop'},
     {perfect: 'to flourish', present: 'flourish'}
+  ],
+  open: [
+    {perfect: 'to open', present: 'open', presentPerfect: 'opens'},
+    {perfect: 'to activate', present: 'activate', presentPerfect: 'activates'},
+    {perfect: 'to create', present: 'create', presentPerfect: 'creates'},
+    {perfect: 'to establish', present: 'establish', presentPerfect: 'establishes'},
+    {perfect: 'to bring about', present: 'bring about', presentPerfect: 'brings about'},
   ]
 }
