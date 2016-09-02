@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-aws-lambda": "^0.1.8",
     "node-random-name": "^1.0.1",
     "npm": "^3.10.5",
     "twit": "^2.2.4",

@@ -16,6 +16,6 @@ module.exports = {
 //how much memory your function needs (shouldn't need more than this)
  publish: true,
 // this creates a new version of your Lambda function every time you update it
- runtime: 'nodejs',
+ runtime: 'nodejs4.3',
 // for node 10, otherwise use 'nodejs4.3'
 };

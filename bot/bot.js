@@ -20,37 +20,37 @@ Bot.tweet = (text, self) => {
     part1 = text
   }
 
-  // if(self !== true){
-  //   Bot.post('statuses/update', {status: part1}, (err, data, response) => {
-  //     if (err) {
-  //       console.log(err);
-  //     } else {
-  //       console.log('success!:', data);
-  //     }
-  //   });
-  // } else {
-  //   Bot.post('statuses/update', {status:part1}, (err, data, response) => {
-  //     if (err) {
-  //       console.log(err);
-  //     } else {
-  //       console.log('success!:', data);
-  //     }
-  //   });
-  // }
-  //
-  // if(_.isString(part2)){
-  //   Bot.tweet(part2, true)
-  // }
-
   if(self !== true){
-    console.log(part1)
+    Bot.post('statuses/update', {status: part1}, (err, data, response) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('success!:', data);
+      }
+    });
   } else {
-    console.log(part1)
+    Bot.post('statuses/update', {status:part1}, (err, data, response) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log('success!:', data);
+      }
+    });
   }
 
   if(_.isString(part2)){
     Bot.tweet(part2, true)
   }
+
+  // if(self !== true){
+  //   console.log(part1)
+  // } else {
+  //   console.log(part1)
+  // }
+  //
+  // if(_.isString(part2)){
+  //   Bot.tweet(part2, true)
+  // }
 }
 
 module.exports = Bot;
