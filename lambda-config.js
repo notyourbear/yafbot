@@ -1,4 +1,4 @@
-config = require('./config.js');
+config = require('./fls/config.js');
 
 module.exports = {
  profile: '',

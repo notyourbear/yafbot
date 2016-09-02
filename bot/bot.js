@@ -1,6 +1,6 @@
 const Twit = require('twit');
 const _ = require('underscore');
-const Config = require('../config.js')
+const Config = require('../fls/config.js')
 
 var Bot = new Twit({
   consumer_key:         Config.consumer_key,
