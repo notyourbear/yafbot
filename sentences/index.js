@@ -15,5 +15,8 @@ module.exports = [
   require('./finding_person_power_save_feelings'),
   require('./person_finding_power_save_feelings'),
   require('./person_finding_portal_bravePlace'),
-  require('./person_finding_portal_bravePlace_feelings')
+  require('./person_finding_portal_bravePlace_feelings'),
+  require('./person_finding_portal_bravePlace_feelings'),
+  require('./finding_person_portal_bravePlace'),
+  require('./finding_person_portal_bravePlace_feelings')
 ];
